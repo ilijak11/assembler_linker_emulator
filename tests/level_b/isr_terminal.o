@@ -1,0 +1,18 @@
+#.symtab 4
+num sym	sect	size	offs	type	scope	defined
+  0      *ABS*	0	  0	00000000	1	l	1
+  2        isr	1	 47	00000000	1	l	1
+  1 my_counter	0	  0	00000000	0	g	0
+  3 isr_terminal	1	  0	00000000	0	g	1
+#.sections 1
+isr	47
+b0 06 12 b0 16 12 a0 0f 
+04 ff 02 a0 1f 00 00 02 
+70 01 b0 0f 04 ff 00 a0 
+07 03 00 00 a0 1f 00 00 
+01 70 01 b0 0f 04 00 00 
+a0 16 42 a0 06 42 20 00 
+.relaisr 2
+offset	  type	    symbol	addend
+00001a	2	my_counter	    -2
+000026	1	my_counter	     0

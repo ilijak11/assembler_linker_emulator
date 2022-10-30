@@ -1,0 +1,19 @@
+#.symtab 6
+num sym	sect	size	offs	type	scope	defined
+  0      *ABS*	0	  0	00000000	1	l	1
+  5        ivt	1	 16	00000000	1	l	1
+  1  isr_reset	0	  0	00000000	0	g	0
+  2  isr_timer	0	  0	00000000	0	g	0
+  3 isr_terminal	0	  0	00000000	0	g	0
+  4  isr_user0	0	  0	00000000	0	g	0
+#.sections 1
+ivt	16
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+.relaivt 4
+offset	  type	    symbol	addend
+000000	3	 isr_reset	     0
+000004	3	 isr_timer	     0
+000006	3	isr_terminal	     0
+000008	3	 isr_user0	     0

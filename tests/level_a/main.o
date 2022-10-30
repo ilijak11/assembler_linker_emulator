@@ -1,0 +1,75 @@
+#.symtab 16
+num sym	sect	size	offs	type	scope	defined
+  0      *ABS*	0	  0	00000000	1	l	1
+ 13    my_code	1	206	00000000	1	l	1
+ 15    my_data	2	 22	00000000	1	l	1
+  1    mathAdd	0	  0	00000000	0	g	0
+  2    mathSub	0	  0	00000000	0	g	0
+  3    mathMul	0	  0	00000000	0	g	0
+  4    mathDiv	0	  0	00000000	0	g	0
+  5   my_start	1	  0	00000000	0	g	1
+  6     value0	2	  0	00000000	0	g	1
+  7     value1	2	  0	00000002	0	g	1
+  8     value2	2	  0	00000004	0	g	1
+  9     value3	2	  0	00000006	0	g	1
+ 10     value4	2	  0	00000008	0	g	1
+ 11     value5	2	  0	0000000a	0	g	1
+ 12     value6	2	  0	0000000c	0	g	1
+ 14 destinations	2	  0	0000000e	0	l	1
+#.sections 2
+my_code	206
+a0 6f 00 fe fe a0 0f 00 
+00 04 10 0f a0 0f 00 00 
+00 b0 06 12 a0 0f 00 00 
+01 b0 06 12 30 ff 00 00 
+00 b0 0f 04 00 00 a0 0f 
+00 00 01 b0 06 12 a0 0f 
+00 00 01 b0 06 12 30 f7 
+05 00 00 b0 0f 04 00 00 
+a0 0f 00 00 08 b0 06 12 
+a0 0f 00 00 0b b0 06 12 
+a0 0f 00 00 02 a0 1f 00 
+00 00 70 01 30 f0 02 b0 
+0f 04 00 00 a0 0f 00 00 
+02 b0 06 12 a0 0f 00 00 
+02 b0 06 12 a0 0f 00 00 
+04 30 f0 03 00 00 b0 0f 
+04 00 00 a0 0f 00 00 05 
+b0 06 12 a0 0f 00 00 19 
+b0 06 12 a0 0f 00 00 06 
+a0 1f 00 00 00 70 01 a0 
+00 02 30 f0 01 b0 0f 04 
+00 00 a0 0f 04 00 00 a0 
+1f 04 00 00 a0 2f 04 00 
+00 a0 3f 04 00 00 a0 4f 
+04 00 00 a0 5f 04 00 00 
+a0 6f 04 00 00 00 00 00 
+.relamy_code 17
+offset	  type	    symbol	addend
+00001f	1	   mathAdd	     0
+000039	2	   mathAdd	    -2
+0000ad	1	    value0	     0
+000024	1	    value1	     0
+0000b2	1	    value1	     0
+00003e	1	    value2	     0
+0000b7	1	    value2	     0
+000062	1	    value3	     0
+0000bc	1	    value3	     0
+000081	1	    value4	     0
+0000c1	1	    value4	     0
+0000a8	1	    value5	     0
+0000c6	1	    value5	     0
+0000cb	1	    value6	     0
+000058	1	   my_data	    14
+00007c	1	   my_data	    14
+00009b	1	   my_data	    14
+my_data	22
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+.relamy_data 4
+offset	  type	    symbol	addend
+00000e	3	   mathAdd	     0
+000010	3	   mathSub	     0
+000012	3	   mathMul	     0
+000014	3	   mathDiv	     0
