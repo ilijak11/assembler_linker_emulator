@@ -1,2 +1,2 @@
 # assembler_linker_emulator
-assembler, inker and emulator school project written in C
+assembler, linker and emulator school project written in C
